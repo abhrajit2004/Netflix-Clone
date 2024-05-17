@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cards::-webkit-scrollbar{
+    display: none;
+}
+
+.login{
+    background-image: linear-gradient(#0000007e, #0000007e), url("./assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px){
+    .login{
+       overflow-x: hidden;
+    }
+    .loginform{
+        width: 100%;
+    }
+    .signup{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-links{
+        justify-content: center;
+        gap: 50px;
+    }
+    .navbar .links{
+        display: none;
+    }
+    .navlogo{
+        margin-left: 6px;
+    }
+    .navbar img{
+        height: 20px;
+    }
+    .navlogo{
+        margin-left: 6px;
+    }
+    .desc img{
+        width: 70%;
+        top: 0px;
+    }
+    .top-banner .title-banner{
+        height: 33vh;
+    }
+    .btns{
+        top: 245px;
+        height: 57px;
+    }
+    .desc p{
+        top: 146px;
+        font-size: small;
+        width: 90%;
+    }
+    .infobtn img{
+        width: 34px;
+    }
+    .playbtn img{
+        width: 20px;
+    }
+    .playbtn{
+        height: 44px;
+    }
+    .infobtn{
+        height: 43px;
+    }
+}
